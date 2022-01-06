@@ -1,4 +1,4 @@
-# hello
+# Vue Todos List
 
 ## Project setup
 ```
