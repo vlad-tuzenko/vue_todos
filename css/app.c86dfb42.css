@@ -1,0 +1,1 @@
+.TodoList{color:#000}.TodoList__list{display:flex;padding:0;flex-direction:column;gap:10px;list-style:none}.TodoList__item{width:400px;padding:20px;display:flex;flex-direction:row;justify-content:space-between;border:1px solid}.TodoList__button{width:70px}
