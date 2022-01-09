@@ -1,9 +1,9 @@
 <template>
   <div>
     <h2>Add new todo:</h2>
-    <form>
-      <input type="text" v-model="text">
-      <select v-model="email">
+    <form @submit="addTodo">
+      <input type="text" v-model="text" required>
+      <select v-model="email" required>
         <option value="" disabled selected>Choose user</option>
         <option
           v-for="(user, index) in userList"
@@ -13,7 +13,7 @@
           {{user.email}}
         </option>
       </select>
-      <button type="button" @click="addTodo">Add todo</button>
+      <button type="submit">Add todo</button>
     </form>
   </div>
 </template>

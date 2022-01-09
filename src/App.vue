@@ -38,7 +38,12 @@ export default {
       this.todos.splice(index, 1);
     },
     addNewUser(user) {
-      this.users.push(user);
+      const usersEmail = this.users.map((person) => person.email);
+
+      if (!usersEmail.includes(user.email)) {
+        this.users.push(user);
+      }
+
       this.modalUser = !this.modalUser;
     },
     addNewTodo(todo) {
